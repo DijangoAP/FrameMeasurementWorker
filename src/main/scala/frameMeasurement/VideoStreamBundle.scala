@@ -11,6 +11,7 @@ class TUserBundle extends Bundle {
   val isLong   = Bool()    // this transfer is part of long-packet
   val isHeader = Bool()    // this beat is the long-packet header
   val lineEnd  = Bool()    // optional: marker for end-of-line (if available)
+  val wordCount= UInt(16.W) // <-- adicionar se o IP fornecer
 }
 
 /** Simplified AXI4-Stream video interface */
